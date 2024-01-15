@@ -15,27 +15,81 @@
     <header>
         <h2>O M</h2>
         <nav>
-            <a href="#">Definicja</a>
-            <a href="#rodzaje">Rodzaje</a>
-            <a href="#stopien">Stopień Wierzchołka</a>
-            <a href="#cykl_sciezka">Cykl i Ścieżka</a>
-            <a href="#grafy_wazone">Grafy Ważone</a>
-            <a href="#grafy_skojarzone">Grafy Skojarzone</a>
-            <a href="#reprezentacje">Reprezentacje Grafów</a>
-            <a href="pages/zastosowania.html">Zastosowania</a>
+            <a href="../index.html">Strona Główna</a>
+            <a href="grafy-definicja.html">Definicja</a>
+            <a href="">Przeszukiwanie grafów</a>
+            <a href="grafy-teoria.html">Rodzaje</a>
+            <a href="stopien-wierzcholka.html">Stopień Wierzchołka</a>
+            <a href="">Cykl i Ścieżka</a>
+            <a href="">Grafy Ważone</a>
+            <a href="grafy-skojarzone.html">Grafy Skojarzone</a>
+            <a href="reprezentacja.html">Reprezentacje Grafów</a>
+            <a href="zastosowania.html">Zastosowania</a>
         </nav>
     </header>
     <main>
         <h1>Grafy</h1>
 
-        <section id="rodzaje">
-            <h3>Rodzaje Grafów</h3>
-            <ul>
-                <li>Skierowane (digraf)</li>
-                <li>Nieskierowane</li>
-                <li>Cykliczne</li>
-                <li>Acykliczne</li>
-            </ul>
+
+        <section>
+            <h3>Zastosowania Grafów</h3>
+            <p>
+                Sieci społecznościowe to obszar, w którym grafy są niezwykle potężnym narzędziem do analizy relacji
+                między użytkownikami.
+                Przyjrzyjmy się bliżej, jak można wykorzystać grafy w analizie wpływu oraz w systemach rekomendacji
+                znajomych.
+            </p>
+
+            <h3>Analiza Wpływu</h3>
+            <p>
+                W grafie społecznościowym, wierzchołki reprezentują użytkowników, a krawędzie - relacje między nimi.
+                Algorytmy analizy centralności, takie jak PageRank, mogą pomóc w identyfikacji tych użytkowników, którzy
+                pełnią kluczową rolę w przekazywaniu informacji.
+            </p>
+
+            <h3>Rekomendacje Znajomych</h3>
+            <p>
+                Wprowadzanie funkcji rekomendacji znajomych opiera się na analizie sąsiedztwa w grafie społecznościowym.
+                Jeśli użytkownik A ma wspólne znajomości z użytkownikiem B, a użytkownik B z użytkownikiem C, system
+                może zarekomendować użytkownika C jako potencjalnego nowego znajomego dla użytkownika A.
+            </p>
+
+            <h3>Implementacja</h3>
+            <p>
+                W praktyce, implementacja takich funkcji wymagałaby korzystania z języków programowania takich jak
+                Python, a biblioteki takie jak NetworkX lub Graph-tool mogą ułatwić operacje na grafach.
+            </p>
+        </section>
+
+        <section id="logistics">
+            <h3>Transport i Logistyka: Optymalizacja Tras Dostaw i Logistyki</h3>
+            <p>
+                W branży transportowej i logistycznej, grafy są niezastąpione do optymalizacji tras dostaw.
+                Zobaczmy, jak grafy mogą pomóc w znalezieniu najkrótszych tras i zoptymalizować zarządzanie łańcuchem
+                dostaw.
+            </p>
+
+            <h3>Optymalizacja Tras Dostaw</h3>
+            <p>
+                Grafy mogą być wykorzystane do znalezienia najbardziej efektywnych tras między punktami dostaw.
+                Algorytmy, takie jak algorytm Dijkstry, są stosowane do znajdowania najkrótszych ścieżek między
+                wierzchołkami (punktami dostaw), co przekłada się na oszczędność czasu i zasobów.
+            </p>
+
+            <h3>Zarządzanie Zapasami i Magazynami</h3>
+            <p>
+                Grafy pomagają w optymalizacji zarządzania zapasami i trasami transportowymi między magazynami a
+                punktami docelowymi. Przy uwzględnieniu różnych ograniczeń, takich jak pojemność magazynów czy
+                dostępność pojazdów, można zoptymalizować cały łańcuch dostaw.
+            </p>
+
+            <h3>Implementacja</h3>
+            <p>
+                Do implementacji optymalizacji tras dostaw w oparciu o grafy, stosuje się języki programowania takie jak
+                Python lub Java. Biblioteki, takie jak NetworkX, OR-Tools czy GraphHopper, ułatwiają pracę z grafami i
+                umożliwiają efektywne stosowanie algorytmów optymalizacyjnych.
+            </p>
+
         </section>
 
 
@@ -47,13 +101,14 @@
     </footer>
     <div class="side-menu">
         <a href="../index.html">Strona Główna</a>
-        <a href="#">Definicja</a>
-        <a href="#rodzaje">Rodzaje</a>
-        <a href="#stopien">Stopień Wierzchołka</a>
-        <a href="#cykl_sciezka">Cykl i Ścieżka</a>
-        <a href="#grafy_wazone">Grafy Ważone</a>
-        <a href="#grafy_skojarzone">Grafy Skojarzone</a>
-        <a href="#reprezentacje">Reprezentacje Grafów</a>
+        <a href="grafy-definicja.html">Definicja</a>
+        <a href="">Przeszukiwanie grafów</a>
+        <a href="grafy-teoria.html">Rodzaje</a>
+        <a href="stopien-wierzcholka.html">Stopień Wierzchołka</a>
+        <a href="">Cykl i Ścieżka</a>
+        <a href="">Grafy Ważone</a>
+        <a href="grafy-skojarzone.html">Grafy Skojarzone</a>
+        <a href="reprezentacja.html">Reprezentacje Grafów</a>
         <a href="zastosowania.html">Zastosowania</a>
     </div>
     <script src="main.js"></script>
