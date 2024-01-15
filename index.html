@@ -14,13 +14,14 @@
     <header>
         <h2>O M</h2>
         <nav>
-            <a href="#">Definicja</a>
-            <a href="#rodzaje">Rodzaje</a>
-            <a href="#stopien">Stopień Wierzchołka</a>
-            <a href="#cykl_sciezka">Cykl i Ścieżka</a>
-            <a href="#grafy_wazone">Grafy Ważone</a>
-            <a href="#grafy_skojarzone">Grafy Skojarzone</a>
-            <a href="#reprezentacje">Reprezentacje Grafów</a>
+            <a href="pages/grafy-definicja.html">Definicja</a>
+            <a href="pages/">Przeszukiwanie grafów</a>
+            <a href="pages/grafy-teoria.html">Rodzaje</a>
+            <a href="pages/stopien-wierzcholka.html">Stopień Wierzchołka</a>
+            <a href="pages/">Cykl i Ścieżka</a>
+            <a href="pages/">Grafy Ważone</a>
+            <a href="pages/grafy-skojarzone.html">Grafy Skojarzone</a>
+            <a href="pages/reprezentacja.html">Reprezentacje Grafów</a>
             <a href="pages/zastosowania.html">Zastosowania</a>
         </nav>
     </header>
@@ -36,43 +37,171 @@
                         między obiektami. Graf to struktura składająca się z wierzchołków (lub węzłów) połączonych
                         krawędziami
                         (lub łukami). Poniżej przedstawiam podstawowe informacje o grafach:</p>
-                    <a href="definicja.html" class="button">Szczegóły</a>
+                    <a href="pages/grafy-definicja.html" class="button">Szczegóły</a>
                 </div>
                 <img src="images/banner.png" alt="Zdjęcie grafu skierowanego">
             </div>
 
         </section>
-
-        <section id="rodzaje">
-            <h3>Rodzaje Grafów</h3>
-            <ul>
-                <li>Skierowane (digraf)</li>
-                <li>Nieskierowane</li>
-                <li>Cykliczne</li>
-                <li>Acykliczne</li>
-            </ul>
+        <section>
+            <div class="section-caption">
+                <h3>Przeszukiwanie grafów</h3>
+                <p>Algorytmy przeszukiwania grafów, takie jak BFS (Breadth-First Search) i DFS (Depth-First Search), są
+                    wykorzystywane do rozwiązywania problemów związanych z trasowaniem, planowaniem i znajdowaniem
+                    najkrótszych ścieżek.</p>
+                <a href="" class="button">Szczegóły</a>
+            </div>
         </section>
 
-        <section id="stopien">
-            <h3>Stopień Wierzchołka</h3>
-            <p>Stopień wierzchołka to liczba krawędzi incydentnych z danym wierzchołkiem.</p>
+        <div class="grid1-1">
+            <section>
+                <div class="section-caption">
+                    <h3>Rodzaje Grafów</h3>
+                    <ul class="flex-li">
+                        <li>Skierowane (digraf) <img src="images/gskierowany.png" alt="Graf Skierowany"
+                                class="small-img">
+                        </li>
+                        <li>Nieskierowane <img src="images/gnieskeirowany.png" alt="Graf Nieskierowany"
+                                class="small-img">
+                        </li>
+                        <li>Cykliczne <img src="images/gcykl.png" alt="Graf Cykliczny" class="small-img"></li>
+                        <li>Acykliczne <img src="images/gacykl.png" alt="Graf Acykliczny" class="small-img"></li>
+                    </ul>
+                    <a href="pages/grafy-teoria.html" class="button">Szczegóły</a>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="section-caption">
+                    <h3>Rodzaje Grafów</h3>
+                    <ul class="flex-li">
+                        <li>Ważone <img src="images/gwazony.png" alt="Graf Acykliczny" class="small-img"></li>
+                        <li>Kubiczne <img src="images/gkubiczny.png" alt="Graf Acykliczny" class="small-img"></li>
+                        <li>Pełny <img src="images/gpelny.png" alt="Graf Acykliczny" class="small-img"></li>
+                    </ul>
+
+                    <a href="pages/grafy-teoria.html" class="button">Szczegóły</a>
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <div class="section-caption">
+                <h3>Stopień Wierzchołka</h3>
+                <p>Stopień wierzchołka w grafie to jedno z fundamentalnych pojęć w teorii grafów, odgrywające kluczową
+                    rolę w analizie struktury grafów. Stopień wierzchołka określa liczbę krawędzi, które są z nim
+                    połączone. W grafie nieskierowanym, stopień wierzchołka to liczba krawędzi, które z niego wychodzą,
+                    natomiast w grafie skierowanym, stopień to suma liczby krawędzi wchodzących i wychodzących.
+                    <br><br>
+                    Stopień wierzchołka v w grafie nieskierowanym można oznaczyć jako d(v), a oblicza się go sumując
+                    liczbę krawędzi z nim połączonych. W grafie skierowanym, możemy rozróżnić stopień wejściowy (
+                    d in(v) - liczba krawędzi wchodzących - oraz stopień wyjściowy (d out (v)) - liczba krawędzi
+                    wychodzących.
+                </p>
+                <a href="pages/stopien-wierzcholka.html" class="button">Szczegóły</a>
+            </div>
         </section>
 
+        <section>
+            <div class="section-caption">
+                <h3>Cykl i Ścieżka</h3>
+                <p>Cykle i ścieżki są podstawowymi koncepcjami w teorii grafów, które odgrywają kluczową rolę w analizie
+                    struktury i zachowań grafów. Oto szczegółowy opis cykli i ścieżek w grafach:
+
+                    Ścieżka w Grafie:
+                    Ścieżka w grafie to sekwencja wierzchołków, w której każde dwa kolejne wierzchołki są połączone
+                    krawędzią. Innymi słowy, ścieżka to ciąg wierzchołków
+                    v1, v2, ..., v (n) taki, że istnieje krawędź między każdą parą kolejnych wierzchołków. Ścieżki mogą
+                    być skierowane (jeśli krawędzie mają kierunek) lub nieskierowane.
+                    <br><br>
+                    Cykl w Grafie:
+                    Cykl w grafie to ścieżka, której pierwszy i ostatni wierzchołek są identyczne, a pozostałe
+                    wierzchołki są różne. Innymi słowy, cykl to zamknięta ścieżka, która odwiedza każdy wierzchołek
+                    dokładnie raz. Cykle, podobnie jak ścieżki, mogą być skierowane lub nieskierowane.
+                </p>
+
+                <a href="pages/" class="button">Szczegóły</a>
+            </div>
+        </section>
+
+        <section class="grid1-1">
+            <div class="section-caption">
+                <h3>Grafy Ważone</h3>
+                <p>W grafie ważonym, każda krawędź posiada przypisaną wagę lub koszt. Wagi te reprezentują różne
+                    wartości, takie jak odległości, koszty przejścia czy inne miary, zależnie od kontekstu problemu.</p>
+                <a href="pages/" class="button">Szczegóły</a>
+            </div>
+            <img src="images/gwazony.png" alt="Graf Ważony">
+        </section>
+
+        <section>
+            <div class="section-caption">
+                <h3>Grafy Skojarzone</h3>
+                <p>Grafy skojarzone, zwane również grafami dwudzielnymi, to specyficzna klasa grafów, w których zbiór
+                    wierzchołków można podzielić na dwa rozłączne zbiory, takie że każda krawędź łączy wierzchołki z
+                    różnych zbiorów. Jest to kategoria grafów, która znajduje szerokie zastosowanie w różnych
+                    dziedzinach, takich jak teoria grafów, teoria kodów korekcyjnych, algorytmy przeszukiwania i
+                    graficzna reprezentacja relacji.</p>
+                <a href="pages/grafy-skojarzone.html" class="button">Szczegóły</a>
+            </div>
+        </section>
+        <section>
+            <div class="section-caption">
+                <h3>Reprezentacje Grafów</h3>
+                <p>Reprezentacje grafów to kluczowy aspekt w analizie i rozwiązywaniu problemów opartych na grafach.
+                    Grafy można reprezentować na różne sposoby, zależnie od potrzeb danego problemu i efektywności
+                    operacji, które mają zostać wykonane. Kliknij w przycisk żeby zobaczyć popularne reprezentacje
+                    grafów.</p>
+                <a href="pages/reprezentacja.html" class="button">Szczegóły</a>
+            </div>
+        </section>
+        <section>
+            <div class="section-caption">
+                <h3>Zastosowanie</h3>
+                <p>Grafy znajdują szerokie zastosowanie w informatyce i matematyce. Algorytmy przeszukiwania grafów,
+                    takie jak BFS i DFS, są używane do rozwiązania problemów trasowania i planowania. Grafy są również
+                    wykorzystywane jako struktury danych, umożliwiające efektywne reprezentowanie i analizowanie
+                    zależności między danymi w różnych dziedzinach życia.</p>
+                <a href="pages/zastosowania.html" class="button">Szczegóły</a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Strona zrobione przez: Oliwier Maciejowski, Marek Kulczyk</p>
-        <p>2024 Teoria Grafów</p>
+        <div class="links">
+            <a href="https://pl.wikipedia.org/wiki/Graf_skierowany
+            ">https://pl.wikipedia.org/wiki/Graf_skierowany
+            </a>
+            <a href="https://pl.wikipedia.org/wiki/Graf_acykliczny
+        ">https://pl.wikipedia.org/wiki/Graf_acykliczny
+            </a>
+            <a href="https://pl.wikipedia.org/wiki/Cykl_(teoria_grafów)
+        ">https://pl.wikipedia.org/wiki/Cykl_(teoria_grafów)
+            </a>
+            <a href="https://pl.wikipedia.org/wiki/Graf_%28matematyka%29
+        ">https://pl.wikipedia.org/wiki/Graf_%28matematyka%29</a>
+            <a href="https://pl.wikipedia.org/wiki/Graf_kubiczny
+            ">https://pl.wikipedia.org/wiki/Graf_kubiczny
+            </a>
+            <a href="http://algorytmy.ency.pl/artykul/graf">http://algorytmy.ency.pl/artykul/graf</a>
+        </div>
+        <div>
+            <p>Strona zrobione przez: Oliwier Maciejowski, Marek Kulczyk</p>
+            <p>2024 Teoria Grafów</p>
+        </div>
+
     </footer>
     <div class="side-menu">
-        <a href="#">Definicja</a>
-        <a href="#rodzaje">Rodzaje</a>
-        <a href="#stopien">Stopień Wierzchołka</a>
-        <a href="#cykl_sciezka">Cykl i Ścieżka</a>
-        <a href="#grafy_wazone">Grafy Ważone</a>
-        <a href="#grafy_skojarzone">Grafy Skojarzone</a>
-        <a href="#reprezentacje">Reprezentacje Grafów</a>
-        <a href="zastosowania.html">Zastosowania</a>
+        <a href="pages/grafy-definicja.html">Definicja</a>
+        <a href="pages/">Przeszukiwanie grafów</a>
+        <a href="pages/grafy-teoria.html">Rodzaje</a>
+        <a href="pages/stopien-wierzcholka.html">Stopień Wierzchołka</a>
+        <a href="pages/">Cykl i Ścieżka</a>
+        <a href="pages/">Grafy Ważone</a>
+        <a href="pages/grafy-skojarzone.html">Grafy Skojarzone</a>
+        <a href="pages/reprezentacja.html">Reprezentacje Grafów</a>
+        <a href="pages/zastosowania.html">Zastosowania</a>
     </div>
     <script src="main.js"></script>
 </body>
