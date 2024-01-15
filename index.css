@@ -5,6 +5,7 @@ section {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    width: 100%;
 }
 
 
@@ -17,4 +18,30 @@ main p {
 ul {
     list-style-type: square;
     padding-left: 20px;
+}
+
+.small-img {
+    height: 6rem;
+    width: auto;
+}
+
+.flex-li li {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+}
+
+.links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    left: 10px;
+}
+
+footer {
+    position: relative;
 }
